@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estelle × Abby</title>
+<meta name="description" content="Candidature d'Estelle Lavenac, designer graphique senior (print, web, motion & vidéo), pour rejoindre l'équipe Abby.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --b1:#1EA2F0; --b2:#1262E5; --grad:linear-gradient(110deg,var(--b1) 0%,var(--b2) 96%);
+  --navy:#0E1A3D; --text:#44506E; --muted:#7A86A3;
+  --soft:#F2F7FF; --soft2:#E8F1FF; --line:#E1EAF8; --white:#fff;
+  --green:#16B364; --yellow:#FFD23F; --pink:#FF6FA8;
+  --r:20px; --shadow:0 18px 50px -20px rgba(18,98,229,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--text);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{color:var(--navy);line-height:1.12;letter-spacing:-.02em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.grad-txt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* promo */
+.promo{background:var(--navy);color:#fff;font-size:14px;text-align:center;padding:9px 16px;font-weight:500}
+.promo b{background:var(--yellow);color:var(--navy);padding:2px 8px;border-radius:99px;margin-right:6px;font-weight:800}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:26px;letter-spacing:-.04em}
+.logo .x{font-size:16px;color:var(--muted);font-weight:600}
+.logo .e{color:var(--navy)}
+.navlinks{display:flex;gap:28px;font-weight:600;color:var(--navy);font-size:15px}
+.navlinks a:hover{color:var(--b2)}
+.navcta{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:15px;padding:13px 22px;border-radius:12px;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0;font-family:inherit}
+.btn-p{background:var(--grad);color:#fff;box-shadow:0 10px 24px -10px rgba(18,98,229,.7)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 16px 30px -10px rgba(18,98,229,.75)}
+.btn-g{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+.btn-g:hover{border-color:var(--b1);color:var(--b2)}
+.btn-link{font-weight:700;color:var(--navy);font-size:15px}
+
+/* hero */
+.hero{background:radial-gradient(1200px 500px at 85% -10%,#DCEBFF 0%,transparent 60%),linear-gradient(180deg,var(--soft) 0%,#fff 100%);padding:70px 0 90px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 14px 6px 6px;font-size:13px;font-weight:700;color:var(--navy);box-shadow:0 6px 16px -10px rgba(14,26,61,.25)}
+.chip span{background:var(--grad);color:#fff;border-radius:99px;padding:3px 10px;font-size:12px}
+.hero h1{font-size:clamp(36px,5vw,58px);font-weight:800;margin:22px 0 22px}
+.checks{list-style:none;display:grid;gap:11px;margin-bottom:30px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-weight:600;color:var(--navy)}
+.checks li::before{content:"";flex:0 0 22px;height:22px;border-radius:50%;background:var(--grad) center/12px no-repeat;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E"),var(--grad);margin-top:1px}
+.checks li small{display:block;margin-top:2px;font-weight:500;color:var(--muted);font-size:13px}
+.agree{display:inline-flex;gap:8px;align-items:center;font-size:13px;font-weight:700;color:var(--b2);background:var(--soft2);padding:7px 12px;border-radius:10px;margin-bottom:26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.trust{display:flex;align-items:center;gap:14px;margin-top:30px;flex-wrap:wrap}
+.faces{display:flex}
+.faces i{width:38px;height:38px;border-radius:50%;border:3px solid #fff;margin-left:-10px;display:grid;place-items:center;font-style:normal;font-size:17px;background:var(--soft2)}
+.faces i:first-child{margin-left:0}
+.trust p{font-size:14px;font-weight:600;color:var(--navy)}
+.trust p small{display:block;color:var(--muted);font-weight:500}
+
+/* invoice */
+.invoice-zone{position:relative}
+.invoice{background:#fff;border-radius:24px;box-shadow:var(--shadow),0 0 0 1px var(--line);padding:26px 26px 22px;position:relative;transform:rotate(1.2deg);transition:transform .4s}
+.invoice:hover{transform:rotate(0)}
+.inv-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:18px}
+.inv-head h3{font-size:20px}
+.inv-head .num{font-size:12px;color:var(--muted);font-weight:600}
+.tag{font-size:11px;font-weight:800;color:var(--green);background:#E7F8EF;border-radius:8px;padding:5px 9px;white-space:nowrap}
+.parties{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.parties div{background:var(--soft);border-radius:12px;padding:10px 12px;font-size:12px}
+.parties b{display:block;color:var(--navy);font-size:13px}
+.lines{list-style:none;border-top:1px dashed var(--line)}
+.lines li{display:grid;grid-template-columns:1fr auto auto;gap:12px;padding:10px 2px;border-bottom:1px dashed var(--line);font-size:13.5px;opacity:0;transform:translateX(14px);transition:.5s}
+.lines li.on{opacity:1;transform:none}
+.lines li b{color:var(--navy);font-weight:700}
+.lines .q{color:var(--muted);font-size:12px;align-self:center}
+.lines .p{font-weight:800;color:var(--b2);font-size:12px;align-self:center}
+.total{display:flex;justify-content:space-between;align-items:center;margin-top:14px;background:var(--grad);color:#fff;border-radius:14px;padding:14px 16px}
+.total small{display:block;opacity:.85;font-size:11px;font-weight:600}
+.total strong{font-size:18px}
+.stamp{position:absolute;left:28px;bottom:-22px;z-index:4;border:3px solid var(--green);color:var(--green);font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:.06em;padding:6px 12px;border-radius:10px;transform:rotate(-12deg) scale(2);opacity:0;transition:.45s cubic-bezier(.2,1.6,.4,1);background:rgba(255,255,255,.9)}
+.stamp.on{opacity:1;transform:rotate(-12deg) scale(1)}
+.inv-sign{margin-top:12px;width:100%}
+.toast{position:absolute;background:#fff;border-radius:14px;box-shadow:0 14px 34px -14px rgba(14,26,61,.4);padding:10px 14px;display:flex;gap:10px;align-items:center;font-size:13px;font-weight:600;color:var(--navy);z-index:3;animation:float 5s ease-in-out infinite}
+.toast em{font-style:normal;width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:var(--soft2);font-size:16px}
+.toast small{display:block;color:var(--muted);font-weight:500;font-size:11px}
+.t1{left:-46px;top:-28px}
+.t2{right:-30px;bottom:-26px;animation-delay:-2.5s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* sections */
+section{padding:96px 0}
+.eyebrow{display:inline-block;font-size:13px;font-weight:800;color:var(--b2);background:var(--soft2);padding:6px 12px;border-radius:99px;margin-bottom:16px;letter-spacing:.02em}
+.sh{text-align:center;max-width:720px;margin:0 auto 54px}
+.sh h2{font-size:clamp(28px,3.6vw,42px);font-weight:800;margin-bottom:14px}
+.sh p{font-size:17px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;position:relative;transition:.3s}
+.step:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.step .n{width:44px;height:44px;border-radius:14px;background:var(--grad);color:#fff;font-weight:800;display:grid;place-items:center;font-size:18px;margin-bottom:18px}
+.step h3{font-size:19px;margin-bottom:8px}
+.step p{font-size:14.5px}
+.step .ic{position:absolute;right:20px;top:24px;font-size:26px}
+.punch{text-align:center;margin-top:40px;font-weight:700;color:var(--navy);font-size:18px}
+
+/* ready block */
+.ready{background:var(--grad);border-radius:32px;color:#fff;padding:58px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.ready::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.08);right:-120px;top:-160px}
+.ready h2{color:#fff;font-size:clamp(28px,3.4vw,40px);font-weight:800;margin-bottom:16px}
+.ready p{opacity:.92;font-size:16.5px;margin-bottom:22px}
+.ready ul{list-style:none;display:grid;gap:12px}
+.ready li{display:flex;gap:10px;font-weight:600}
+.ready li::before{content:"✓";flex:0 0 24px;height:24px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:13px;font-weight:800}
+.ready .btn-w{background:#fff;color:var(--b2)}
+.ready .btn-w:hover{transform:translateY(-2px)}
+.badge-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:24px;padding:26px;position:relative;z-index:1;backdrop-filter:blur(4px)}
+.badge-card .big{font-size:64px;font-weight:800;line-height:1}
+.badge-card .row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:14px}
+.badge-card .row:last-child{border:0}
+.badge-card .row b{font-weight:800}
+
+/* features */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feat{background:var(--soft);border-radius:var(--r);padding:28px;transition:.3s;border:1px solid transparent}
+.feat:hover{background:#fff;border-color:var(--line);box-shadow:var(--shadow)}
+.feat .fi{width:52px;height:52px;border-radius:16px;background:#fff;display:grid;place-items:center;font-size:24px;margin-bottom:18px;box-shadow:0 8px 20px -12px rgba(18,98,229,.5)}
+.feat h3{font-size:19px;margin-bottom:6px}
+.feat>p{font-size:14.5px;margin-bottom:14px}
+.feat ul{list-style:none;display:grid;gap:7px;font-size:14px;font-weight:600;color:var(--navy)}
+.feat li::before{content:"•";color:var(--b1);margin-right:8px;font-weight:800}
+.feat.hl{background:var(--navy);color:#C9D4EE}
+.feat.hl h3,.feat.hl ul{color:#fff}
+.feat.hl .fi{background:var(--grad)}
+.new{font-size:11px;font-weight:800;background:var(--yellow);color:var(--navy);padding:3px 8px;border-radius:6px;margin-left:6px;vertical-align:middle}
+
+/* reviews */
+.reviews{background:var(--soft)}
+.scores{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:40px}
+.score{background:#fff;border-radius:16px;padding:14px 22px;display:flex;align-items:center;gap:12px;border:1px solid var(--line)}
+.score b{font-size:24px;color:var(--navy)}
+.score span{font-size:13px;line-height:1.3}
+.stars{color:#FFB800;letter-spacing:2px}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:#fff;border-radius:var(--r);padding:26px;border:1px solid var(--line)}
+.rev p{color:var(--navy);font-weight:500;margin:10px 0 18px;font-size:15.5px}
+.who{display:flex;gap:12px;align-items:center;font-size:14px}
+.who i{font-style:normal;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:20px;background:var(--soft2)}
+.who b{display:block;color:var(--navy)}
+.who small{color:var(--muted)}
+.disclaim{text-align:center;font-size:12.5px;color:var(--muted);margin-top:22px}
+
+/* pricing */
+.toggle{display:flex;justify-content:center;align-items:center;gap:12px;margin:-28px 0 40px;font-weight:700;color:var(--navy);font-size:15px}
+.sw{width:52px;height:30px;border-radius:99px;background:var(--grad);position:relative;cursor:pointer;border:0}
+.sw::after{content:"";position:absolute;top:4px;left:26px;width:22px;height:22px;border-radius:50%;background:#fff;transition:.3s}
+.sw.off{background:#C9D3E6}
+.sw.off::after{left:4px}
+.toggle .pill{font-size:12px;background:#E7F8EF;color:var(--green);padding:4px 9px;border-radius:99px}
+.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:stretch}
+.plan{border:1.5px solid var(--line);border-radius:24px;padding:26px 22px;display:flex;flex-direction:column;background:#fff;position:relative}
+.plan.pop{border:2px solid var(--b2);box-shadow:var(--shadow);transform:translateY(-10px)}
+.plan .pb{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-size:12px;font-weight:800;padding:5px 12px;border-radius:99px;white-space:nowrap}
+.plan h3{font-size:20px}
+.plan .pr{font-size:38px;font-weight:800;color:var(--navy);margin:12px 0 2px;letter-spacing:-.03em}
+.plan .pr small{font-size:14px;color:var(--muted);font-weight:600;letter-spacing:0}
+.plan .sub{font-size:13px;color:var(--muted);margin-bottom:18px;min-height:38px}
+.plan .btn{width:100%;margin-bottom:20px}
+.plan ul{list-style:none;display:grid;gap:9px;font-size:14px}
+.plan li{display:flex;gap:9px}
+.plan li::before{content:"✓";color:var(--green);font-weight:800}
+.plan li.first{font-weight:700;color:var(--navy)}
+.plan li.first::before{content:"+";color:var(--b2)}
+.plan .strike{text-decoration:line-through;color:var(--muted);font-size:14px;font-weight:600;margin-left:6px}
+.note{text-align:center;font-size:14px;margin-top:28px;color:var(--muted)}
+
+/* signature */
+.sign-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.sign-wrap h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;margin-bottom:14px}
+.sign-wrap p{font-size:16.5px;margin-bottom:12px}
+.fine{font-size:12.5px;color:var(--muted)}
+.pad{background:#fff;border-radius:24px;box-shadow:var(--shadow),0 0 0 1px var(--line);padding:22px;position:relative}
+.pad-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:13px;font-weight:700;color:var(--navy)}
+.pad-top button{background:none;border:0;color:var(--muted);font-family:inherit;font-weight:600;cursor:pointer;font-size:13px}
+#canvas{width:100%;height:220px;border-radius:16px;background:repeating-linear-gradient(0deg,transparent 0 36px,#EEF3FB 36px 37px),var(--soft);touch-action:none;cursor:crosshair;display:block}
+.pad-line{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:10px}
+.signed{position:absolute;inset:0;border-radius:24px;background:rgba(255,255,255,.96);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:26px;opacity:0;pointer-events:none;transition:.4s}
+.signed.on{opacity:1;pointer-events:auto}
+.signed .ok{width:64px;height:64px;border-radius:50%;background:#E7F8EF;color:var(--green);display:grid;place-items:center;font-size:30px;font-weight:800;margin-bottom:14px}
+.signed h3{font-size:24px;margin-bottom:6px}
+.signed p{margin-bottom:18px}
+.signed .ctas{justify-content:center}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+details{border:1px solid var(--line);border-radius:16px;background:#fff;transition:.2s}
+details[open]{box-shadow:var(--shadow);border-color:transparent}
+summary{list-style:none;cursor:pointer;padding:20px 22px;font-weight:700;color:var(--navy);display:flex;justify-content:space-between;gap:16px;font-size:16.5px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;line-height:1;color:var(--b2);transition:.3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 22px 22px;font-size:15.5px}
+
+/* final */
+.final{text-align:center;background:radial-gradient(800px 400px at 50% 0%,#DCEBFF,transparent 70%),var(--soft);border-radius:32px;padding:70px 26px}
+.final h2{font-size:clamp(30px,4vw,48px);font-weight:800;margin-bottom:14px}
+.final p{font-size:17px;max-width:620px;margin:0 auto 28px}
+.final .ctas{justify-content:center}
+.final small{display:block;margin-top:16px;color:var(--muted);font-size:13.5px}
+
+footer{background:var(--navy);color:#AEB9D6;padding:56px 0 30px;margin-top:96px;font-size:14.5px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+footer .logo{color:#fff;margin-bottom:12px}
+footer .logo .e{color:#fff}
+footer h4{color:#fff;font-size:15px;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:#fff}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:20px;text-align:center;font-size:13px;grid-column:1/-1}
+
+/* floating wa */
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;background:var(--grad);color:#fff;font-weight:700;border-radius:99px;padding:13px 18px;box-shadow:0 14px 30px -10px rgba(18,98,229,.8);font-size:14.5px;display:flex;gap:8px;align-items:center;transition:transform .2s}
+.wa:hover{transform:translateY(-3px)}
+
+/* live toast */
+.live{position:fixed;left:20px;bottom:20px;z-index:60;background:#fff;border-radius:16px;box-shadow:0 18px 40px -14px rgba(14,26,61,.45);padding:12px 16px;display:flex;gap:12px;align-items:center;max-width:320px;transform:translateY(140%);transition:transform .5s cubic-bezier(.2,1.2,.4,1);font-size:13.5px;font-weight:600;color:var(--navy)}
+.live.on{transform:none}
+.live em{font-style:normal;width:36px;height:36px;flex:0 0 36px;border-radius:11px;background:var(--soft2);display:grid;place-items:center;font-size:18px}
+.live small{display:block;color:var(--muted);font-weight:500;font-size:11.5px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:100}
+
+@media (max-width:980px){
+  .hero .wrap,.ready,.sign-wrap{grid-template-columns:1fr}
+  .steps,.plans{grid-template-columns:1fr 1fr}
+  .feats,.revs{grid-template-columns:1fr 1fr}
+  .navlinks{display:none}
+  .t1{left:-6px;top:-30px}.t2{right:-6px}
+  .plan.pop{transform:none}
+  .ready{padding:40px 28px}
+  footer .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:620px){
+  .steps,.plans,.feats,.revs,.parties{grid-template-columns:1fr}
+  section{padding:70px 0}
+  .navcta .btn-g{display:none}
+  .navcta .btn{padding:11px 14px;font-size:14px}
+  .hero{padding:44px 0 70px}
+  .invoice{padding:20px 16px}
+  .lines li{grid-template-columns:1fr auto;}
+  .lines .q{display:none}
+  .live{display:none}
+  .wa span{display:none}
+  footer .wrap{grid-template-columns:1fr}
+  .promo{font-size:12.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal,.lines li{opacity:1;transform:none}
+}
+
+/* ===== mini-jeu ===== */
+.game-sec{background:linear-gradient(180deg,#fff 0%,var(--soft) 100%)}
+.game-card{max-width:900px;margin:0 auto;background:#fff;border-radius:28px;box-shadow:var(--shadow),0 0 0 1px var(--line);padding:18px;position:relative}
+.hud{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:4px 6px 14px;flex-wrap:wrap}
+.hud .pill{display:inline-flex;align-items:center;gap:8px;background:var(--soft);border-radius:12px;padding:8px 14px;font-weight:700;color:var(--navy);font-size:14.5px}
+.hud .pill b{font-size:18px;color:var(--b2);font-variant-numeric:tabular-nums}
+.hud .legend{display:flex;gap:14px;font-size:13px;font-weight:600;color:var(--text);flex-wrap:wrap}
+.stage{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:16/10;background:linear-gradient(180deg,#EAF3FF 0%,#F7FAFF 70%,#fff 100%)}
+#game{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:none}
+.overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:rgba(242,247,255,.9);backdrop-filter:blur(3px);transition:opacity .3s}
+.overlay.hide{opacity:0;pointer-events:none}
+.overlay h3{font-size:clamp(22px,3.2vw,32px);font-weight:800;margin-bottom:8px}
+.overlay p{max-width:520px;margin-bottom:16px;font-size:15.5px}
+.rules{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.rules span{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-size:13.5px;font-weight:700;color:var(--navy)}
+.rules .neg{color:#E5484D}
+.overlay .ctas{justify-content:center}
+.big-score{font-size:clamp(40px,7vw,64px);font-weight:800;line-height:1;margin:6px 0 4px}
+.rank{display:inline-block;background:var(--grad);color:#fff;border-radius:99px;padding:6px 14px;font-weight:800;font-size:14px;margin-bottom:12px}
+.best{font-size:13px;color:var(--muted);margin-bottom:18px}
+.game-link{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:700;color:var(--b2);font-size:14.5px;border-bottom:2px dashed rgba(18,98,229,.35);padding-bottom:2px}
+.game-link:hover{border-color:var(--b2)}
+@media (max-width:620px){
+  .stage{aspect-ratio:3/4}
+  .game-card{padding:12px;border-radius:22px}
+  .hud .legend{display:none}
+}
+
+.promo .ps{display:none}
+@media (max-width:620px){
+  .promo .pl{display:none}.promo .ps{display:inline}
+  section{padding:56px 0}
+  .sh{margin-bottom:28px}
+  .sh h2{font-size:27px}
+  .sh p{font-size:15px}
+  .eyebrow{margin-bottom:10px}
+  /* hero */
+  .hero{padding:28px 0 48px}
+  .hero .wrap{gap:34px}
+  .chip{font-size:12px}
+  .hero h1{font-size:33px;margin:16px 0}
+  .checks{gap:8px;margin-bottom:22px}
+  .checks li small,.agree,.faces{display:none}
+  .checks li{font-size:15px}
+  .ctas .btn{flex:1 1 auto}
+  .trust{margin-top:18px}
+  .t1,.t2,.parties,.inv-head .num{display:none}
+  .invoice{transform:none;padding:18px 16px 16px;border-radius:20px}
+  .inv-head{margin-bottom:8px}
+  .inv-head h3{font-size:17px}
+  .lines li{padding:8px 2px;font-size:13px}
+  .total{padding:12px 14px}.total strong{font-size:16px}
+  .stamp{bottom:-16px;left:18px;font-size:12px}
+  /* carrousels */
+  .snap{display:flex!important;flex-wrap:nowrap!important;justify-content:flex-start!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -20px;padding:6px 20px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .snap::-webkit-scrollbar{display:none}
+  .snap>*{flex:0 0 82%;scroll-snap-align:center}
+  .snap>.reveal{opacity:1;transform:none}
+  .step,.feat,.rev{padding:22px 20px}
+  .step:hover,.feat:hover{transform:none}
+  .punch{margin-top:18px;font-size:16px}
+  .scores{margin:0 -20px 18px}
+  .scores>*{flex:0 0 auto;padding:10px 16px}
+  .plans{align-items:stretch;padding-top:20px}
+  .plans .pop{order:-1}
+  .plan{padding:22px 18px}
+  .plan .pr{font-size:32px}
+  .plan .sub{min-height:0}
+  .toggle{margin:-12px 0 8px;flex-wrap:wrap}
+  .note{margin-top:14px;font-size:13px}
+  .disclaim{margin-top:8px}
+  /* bloc bleu */
+  .ready{padding:30px 22px;border-radius:24px;gap:0}
+  .ready p{font-size:15px}
+  .ready ul{gap:9px;font-size:14.5px}
+  .ready li:nth-child(n+3){display:none}
+  .badge-card{display:none}
+  /* signature, faq, fin */
+  .sign-wrap{gap:24px}
+  .sign-wrap p{font-size:15px}
+  #canvas{height:170px}
+  summary{padding:16px 18px;font-size:15.5px}
+  details p{padding:0 18px 18px;font-size:14.5px}
+  .final{padding:44px 20px;border-radius:24px}
+  .final p{font-size:15px}
+  footer{margin-top:56px;padding:40px 0 24px}
+  footer .wrap{gap:22px}
+  .wa{right:14px;bottom:14px;padding:12px 14px}
+}
+</style>
+</head>
+<body>
+
+<div class="promo">🍂 Promotion d'automne<span class="pl">&nbsp;: une designer senior dispo tout de suite, 0 € de frais de dossier</span><span class="ps">&nbsp;: designer dispo tout de suite</span></div>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Estelle pour Abby"><span class="grad-txt">abby</span><span class="x">×</span><span class="e">estelle</span></a>
+    <div class="navlinks">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#pourquoi">Pourquoi moi ?</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#jeu">🎮 Le jeu</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="navcta">
+      <a class="btn btn-g" href="https://estellelavenac.github.io/Estelle-Lavenac/" target="_blank" rel="noopener">Mon CV</a>
+      <a class="btn btn-p" href="https://estellelavenac.github.io/Estelle-Lavenac/book.html" target="_blank" rel="noopener">Voir mon book</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="chip"><span>Nouveau</span> Candidature spontanée · Designer graphique senior</span>
+      <h1>Design, motion et vidéo pour <span class="grad-txt">tous les indépendants</span> (et surtout pour Abby)</h1>
+      <ul class="checks">
+        <li><div>Créations illimitées<small>print, web, social, landing pages… dans la limite des deadlines</small></div></li>
+        <li><div>Déjà conforme à la facturation 2026<small>4 ans de design chez un éditeur de logiciel de facturation</small></div></li>
+        <li><div>Motion design & vidéo intégrés<small>du storyboard au montage son, sans quitter Estelle</small></div></li>
+        <li><div>Charte graphique automatisée<small>je la respecte, je la fais grandir, je ne la casse pas</small></div></li>
+      </ul>
+      <div class="agree">🏅 Designer agréée par 9 ans de terrain</div>
+      <div class="ctas">
+        <a class="btn btn-p" href="https://estellelavenac.github.io/Estelle-Lavenac/book.html" target="_blank" rel="noopener">Voir mon book gratuitement →</a>
+        <a class="btn btn-g" href="#signature">Signer le devis ✍️</a>
+      </div>
+      <div class="trust">
+        <div class="faces"><i>🎨</i><i>🎬</i><i>🖨️</i><i>💻</i></div>
+        <p>9 ans d'expérience, 0 facture ratée<small>Print · Web · Motion · Vidéo · UI</small></p>
+      </div>
+      <a class="game-link" href="#jeu">🎮 Psst… une pause ? Jouez à « Encaisse ! »</a>
+    </div>
+
+    <div class="invoice-zone">
+      <div class="toast t1"><em>💸</em><div>Paiement reçu<small>1 idée de génie · à l'instant</small></div></div>
+      <div class="invoice" id="invoice">
+        <div class="inv-head">
+          <div><div class="num">Devis n° EL-2026-ABBY</div><h3>Recrutement d'une designer</h3></div>
+          <span class="tag">Factur-Estelle ✓</span>
+        </div>
+        <div class="parties">
+          <div><small>Émetteur</small><b>Estelle Lavenac</b>Pierrefeu-du-Var (83)</div>
+          <div><small>Client</small><b>Abby SAS</b>Nancy (54)</div>
+        </div>
+        <ul class="lines" id="lines">
+          <li><b>Identité visuelle & print</b><span class="q">9 ans</span><span class="p">inclus</span></li>
+          <li><b>Web, social & landing pages</b><span class="q">illimité</span><span class="p">inclus</span></li>
+          <li><b>Motion design & vidéo</b><span class="q">25 i/s</span><span class="p">inclus</span></li>
+          <li><b>XP logiciel de facturation</b><span class="q">4 ans</span><span class="p">inclus</span></li>
+          <li><b>Bonne humeur</b><span class="q">∞</span><span class="p">offerte</span></li>
+        </ul>
+        <div class="total">
+          <div><small>Total TTC (Toujours Très Créative)</small><strong>1 CDI · remote ou hybride</strong></div>
+          <span style="font-size:26px">✍️</span>
+        </div>
+        <div class="stamp" id="stamp">Bon pour accord</div>
+      </div>
+      <div class="toast t2"><em>🔔</em><div>Relance automatique<small>Estelle attend votre appel 😇</small></div></div>
+    </div>
+  </div>
+</header>
+
+<section id="pourquoi">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="eyebrow">Du brief à la mise en ligne</span>
+      <h2>Du brief à la mise en ligne, <span class="grad-txt">tout est connecté</span></h2>
+      <p>Votre com', vos visuels et vos vidéos dans une seule designer. Voici votre quotidien avec Estelle.</p>
+    </div>
+    <div class="snap steps">
+      <div class="step reveal"><span class="ic">👂</span><div class="n">1</div><h3>Je comprends</h3><p>Brief, cible, objectifs. J'écoute avant de dessiner, surtout quand la cible ce sont 300 000 indépendants pressés.</p></div>
+      <div class="step reveal"><span class="ic">🎨</span><div class="n">2</div><h3>Je crée</h3><p>Campagnes, posts, bannières, emailings, salons, goodies. Conforme à la charte en quelques secondes (bon, en quelques heures).</p></div>
+      <div class="step reveal"><span class="ic">🎬</span><div class="n">3</div><h3>J'anime</h3><p>Storyboard, motion, montage, sound design. Des vidéos qui rendent la TVA presque fun. Presque.</p></div>
+      <div class="step reveal"><span class="ic">🚀</span><div class="n">4</div><h3>Je livre</h3><p>Déclinaisons, formats, sources propres et rangées. Zéro saisie manuelle pour l'équipe derrière moi.</p></div>
+    </div>
+    <p class="punch reveal">4 étapes, 1 seule designer. C'est ça, Estelle.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="ready reveal">
+      <div>
+        <h2>Estelle est déjà prête pour Abby</h2>
+        <p>De 2022 à 2026, j'ai designé pour Evoliz, un éditeur de logiciel de facturation. Les indépendants, la réforme, les pages login, l'URSSAF qui fait peur : je connais déjà la musique. Vous n'avez rien à changer, je suis déjà conforme.</p>
+        <ul>
+          <li>Campagnes ADS, réseaux sociaux, blog, mailings pour un SaaS de gestion</li>
+          <li>Stands, plaquettes et goodies pour les salons d'entrepreneurs</li>
+          <li>Motion & vidéo pour expliquer simplement des sujets pas simples</li>
+          <li>Évolution de charte et coordination des freelances</li>
+        </ul>
+        <div class="ctas" style="margin-top:28px">
+          <a class="btn btn-w" href="https://estellelavenac.github.io/Estelle-Lavenac/book.html" target="_blank" rel="noopener">Découvrir mon book →</a>
+        </div>
+      </div>
+      <div class="badge-card">
+        <div class="big"><span id="count">0</span> ans</div>
+        <p style="margin:6px 0 14px;opacity:.9">de design, dont 4 dans la facturation</p>
+        <div class="row"><span>Format</span><b>Print + Web + Motion</b></div>
+        <div class="row"><span>Hébergement</span><b>Var (83), soleil inclus</b></div>
+        <div class="row"><span>Compatibilité</span><b>Remote · Hybride · Nancy</b></div>
+        <div class="row"><span>Mise en service</span><b>Immédiate</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fonctionnalites" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="eyebrow">Fonctionnalités</span>
+      <h2>Tout ce dont vous avez besoin pour <span class="grad-txt">faire briller Abby</span></h2>
+      <p>Une offre complète, sans abonnement à 6 freelances différents.</p>
+    </div>
+    <div class="snap feats">
+      <div class="feat reveal"><div class="fi">🖋️</div><h3>Identité & print</h3><p>Des supports qui donnent envie d'être indépendant.</p><ul><li>Plaquettes, flyers, affiches</li><li>Stands & kakémonos de salon</li><li>Packaging & goodies</li></ul></div>
+      <div class="feat reveal"><div class="fi">📱</div><h3>Web & social</h3><p>Pour parler à vos 100k abonnés sans les endormir.</p><ul><li>Posts, carrousels, stories</li><li>Campagnes ADS & bannières</li><li>Landing pages & newsletters</li></ul></div>
+      <div class="feat hl reveal"><div class="fi">🎬</div><h3>Motion & vidéo <span class="new">Le + demandé</span></h3><p>Les tutos et pubs qui font cliquer « Commencer gratuitement ».</p><ul><li>Storyboard & animation After Effects</li><li>Tournage, montage, sound design</li><li>Formats YouTube, TikTok, Reels</li></ul></div>
+      <div class="feat reveal"><div class="fi">🧩</div><h3>UI / UX</h3><p>Parce qu'une facture, c'est aussi une interface.</p><ul><li>Maquettes & parcours Figma</li><li>Pages Webflow</li><li>Modèles de factures stylés 😉</li></ul></div>
+      <div class="feat reveal"><div class="fi">🤖</div><h3>IA créative</h3><p>Catégorisation intelligente… de mes idées.</p><ul><li>Claude, ChatGPT & co</li><li>Prototypage rapide</li><li>Plus de temps pour créer</li></ul></div>
+      <div class="feat reveal"><div class="fi">☀️</div><h3>Bonne humeur</h3><p>Incluse dans toutes les formules, même la gratuite.</p><ul><li>Pro, organisée, à l'heure</li><li>Plannings sans scène de crime</li><li>Rigolade avec les copaings</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sh reveal" style="margin-bottom:30px">
+      <span class="eyebrow">Avis (très) vérifiés</span>
+      <h2>La designer la mieux notée <span class="grad-txt">de son bureau</span></h2>
+    </div>
+    <div class="snap scores reveal">
+      <div class="score"><b>4,9</b><span><span class="stars">★★★★★</span><br>sur After Effects</span></div>
+      <div class="score"><b>5/5</b><span><span class="stars">★★★★★</span><br>sur Figma</span></div>
+      <div class="score"><b>100%</b><span>de deadlines<br>tenues (ou presque)</span></div>
+    </div>
+    <div class="snap revs">
+      <div class="rev reveal"><span class="stars">★★★★★</span><p>« Elle m'ouvre tous les matins et ne me fait jamais planter. Enfin, presque jamais. »</p><div class="who"><i>🎞️</i><div><b>After Effects</b><small>Logiciel, collègue de longue date</small></div></div></div>
+      <div class="rev reveal"><span class="stars">★★★★★</span><p>« Plusieurs projets en parallèle et pas une case en rouge. Je ne pourrais plus faire sans. »</p><div class="who"><i>🗓️</i><div><b>Son planning</b><small>Témoin oculaire</small></div></div></div>
+      <div class="rev reveal"><span class="stars">★★★★☆</span><p>« Très bonne relation. Je retire une étoile car elle m'oublie parfois quand elle est à fond sur un montage. »</p><div class="who"><i>☕</i><div><b>Sa tasse de café</b><small>Avis Google (de la cuisine)</small></div></div></div>
+    </div>
+    <p class="disclaim">* Avis rédigés par des objets. Pour des avis humains, rendez-vous en entretien.</p>
+  </div>
+</section>
+
+<section id="tarifs">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="eyebrow">Tarifs</span>
+      <h2>Choisissez <span class="grad-txt">votre formule Estelle</span></h2>
+      <p>Sans engagement pour le premier appel. Annulez à tout moment (mais vous ne voudrez pas).</p>
+    </div>
+    <div class="toggle reveal">
+      <span>Freelance</span><button class="sw" id="sw" aria-label="Basculer CDI / freelance"></button><span>CDI</span><span class="pill">Recommandé</span>
+    </div>
+    <div class="snap plans">
+      <div class="plan reveal">
+        <h3>Basique</h3>
+        <div class="pr">0 €</div>
+        <div class="sub">100 % gratuit, sans carte bancaire</div>
+        <a class="btn btn-g" href="https://estellelavenac.github.io/Estelle-Lavenac/book.html" target="_blank" rel="noopener">Voir mon book</a>
+        <ul><li>Accès au book illimité</li><li>CV téléchargeable</li><li>Zéro démarche administrative</li></ul>
+      </div>
+      <div class="plan reveal">
+        <h3>Start</h3>
+        <div class="pr">0 €<small> / 15 min</small></div>
+        <div class="sub">Un premier appel pour se découvrir</div>
+        <a class="btn btn-g" href="tel:0648374822">M'appeler</a>
+        <ul><li class="first">En plus de Basique</li><li>Un appel ou un café visio</li><li>Réponses à toutes vos questions</li><li>Accent du Sud offert</li></ul>
+      </div>
+      <div class="plan pop reveal">
+        <span class="pb">Le + populaire</span>
+        <h3>Pro</h3>
+        <div class="pr" id="proPrice">CDI</div>
+        <div class="sub" id="proSub">Full remote depuis le Var, ou hybride avec des passages à Nancy</div>
+        <a class="btn btn-p" href="mailto:estelle.lavenac@gmail.com?subject=Abby%20%C3%97%20Estelle%20%E2%80%94%20on%20en%20parle%20%3F">Recruter Estelle</a>
+        <ul><li class="first">En plus de Start</li><li>Design print, web & social</li><li>Motion design & vidéo</li><li>Relances de créativité automatiques</li><li>Signature d'un vrai contrat 🎉</li></ul>
+      </div>
+      <div class="plan reveal">
+        <h3>Business</h3>
+        <div class="pr">Sur devis</div>
+        <div class="sub">Pour aller encore plus loin</div>
+        <a class="btn btn-g" href="https://wa.me/33648374822?text=Bonjour%20Estelle%2C%20on%20vient%20de%20voir%20ta%20page%20pour%20Abby%20!">Discuter sur WhatsApp</a>
+        <ul><li class="first">En plus de Pro</li><li>Évolution de la charte Abby</li><li>Design system & templates</li><li>Coordination des freelances</li><li>Support prioritaire (je réponds vite)</li></ul>
+      </div>
+    </div>
+    <p class="note">Disponible immédiatement · CDI ou CDD · Full remote ou hybride, avec plaisir pour monter à Nancy quand il le faut.</p>
+  </div>
+</section>
+
+<section id="signature" style="background:var(--soft)">
+  <div class="wrap sign-wrap">
+    <div class="reveal">
+      <span class="eyebrow">E-signature intégrée</span>
+      <h2>Faites-moi signer sur place, <span class="grad-txt">ou signez vous-même</span></h2>
+      <p>Chez Abby, on signe ses devis en ligne. Alors on fait pareil : dessinez votre plus belle signature ci-contre pour valider le devis EL-2026-ABBY.</p>
+      <p class="fine">* Signature juridiquement non contraignante. Émotionnellement, par contre…</p>
+    </div>
+    <div class="pad reveal">
+      <div class="pad-top"><span>✍️ Signature du client · Abby SAS</span><button id="clear" type="button">Effacer</button></div>
+      <canvas id="canvas" aria-label="Zone de signature"></canvas>
+      <div class="pad-line"><span>Lu et approuvé, bon pour recrutement</span><span id="date"></span></div>
+      <div class="signed" id="signed">
+        <div class="ok">✓</div>
+        <h3>Devis signé ! 🎉</h3>
+        <p>Plus qu'une étape : on s'appelle ?</p>
+        <div class="ctas">
+          <a class="btn btn-p" href="mailto:estelle.lavenac@gmail.com?subject=Abby%20%C3%97%20Estelle%20%E2%80%94%20devis%20sign%C3%A9%20!">M'écrire</a>
+          <a class="btn btn-g" href="https://estellelavenac.github.io/Estelle-Lavenac/book.html" target="_blank" rel="noopener">Voir mon book</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="jeu" class="game-sec">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="eyebrow">Mini-jeu · 30 secondes</span>
+      <h2>Encaisse ! <span class="grad-txt">Le jeu où les factures se paient toutes seules</span></h2>
+      <p>Le rêve de tout indépendant : attraper les paiements avant qu'ils ne filent, et esquiver la paperasse. Bonne nouvelle : avec Abby, c'est presque déjà le cas.</p>
+    </div>
+    <div class="game-card reveal">
+      <div class="hud">
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <span class="pill">💰 <b id="gScore">0 €</b></span>
+          <span class="pill">⏱️ <b id="gTime">30</b> s</span>
+        </div>
+        <div class="legend"><span>💶 +100 €</span><span>💡 +300 €</span><span>📄 −200 €</span></div>
+      </div>
+      <div class="stage" id="stage">
+        <canvas id="game" aria-label="Mini-jeu Encaisse !"></canvas>
+        <div class="overlay" id="gStart">
+          <h3>Prête à encaisser ? 💸</h3>
+          <p>Déplacez la tirelire Abby avec la souris, le doigt ou les flèches du clavier.</p>
+          <div class="rules"><span>💶 Paiement reçu +100 €</span><span>💡 Idée d'Estelle +300 €</span><span class="neg">📄 Paperasse −200 €</span></div>
+          <button class="btn btn-p" id="gPlay" type="button">C'est parti !</button>
+        </div>
+        <div class="overlay hide" id="gEnd">
+          <h3 id="gTitle">Belle compta !</h3>
+          <div class="big-score grad-txt" id="gFinal">0 €</div>
+          <span class="rank" id="gRank">Rang</span>
+          <div class="best" id="gBest"></div>
+          <div class="ctas">
+            <button class="btn btn-g" id="gAgain" type="button">Rejouer ↺</button>
+            <a class="btn btn-p" href="https://estellelavenac.github.io/Estelle-Lavenac/book.html" target="_blank" rel="noopener">Encaisser mon book →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions <span class="grad-txt">fréquentes</span></h2>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>Estelle est-elle vraiment gratuite ?</summary><p>Le book, le CV et le premier appel, oui, pour toujours. Pour le reste, je fonctionne avec un abonnement mensuel appelé « salaire ». Sans frais cachés.</p></details>
+      <details class="reveal"><summary>Pourquoi Abby ?</summary><p>Parce que vous faites un produit pour les indépendants, pensé par d'anciens indépendants, avec un ton simple et sympa. J'ai moi-même lancé une activité en freelance : la galère administrative, je l'ai vécue. Et rendre un sujet austère accessible et joyeux, c'est exactement ce que j'aime faire.</p></details>
+      <details class="reveal"><summary>Nancy – Var, ce n'est pas un peu loin ?</summary><p>Un peu, oui. C'est pour ça que je vous propose du full remote ou de l'hybride : je travaille depuis le Var au quotidien, et je monte à Nancy dès qu'il le faut (séminaires, shootings, tournages, raclette d'équipe).</p></details>
+      <details class="reveal"><summary>Elle fait aussi de la vidéo ?</summary><p>Oui ! Storyboard, motion design, tournage, montage et son. Les tutos, pubs et formats courts, c'est mon terrain de jeu préféré.</p></details>
+      <details class="reveal"><summary>Peut-on passer d'un autre logiciel à Estelle ?</summary><p>Oui, la migration est simple et rapide. 4 ans dans l'univers de la facturation : je connais déjà les codes, les contraintes et le jargon. La numérotation de mes compétences est entièrement configurable.</p></details>
+      <details class="reveal"><summary>Fonctionne-t-elle sur mobile ?</summary><p>Oui : <a href="tel:0648374822" style="color:var(--b2);font-weight:700">06 48 37 48 22</a>. Disponible sur iOS, Android et même sur les vieux Nokia.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="final reveal">
+    <h2>Prêts à <span class="grad-txt">simplifier votre design ?</span></h2>
+    <p>Rejoignez l'aventure avec une designer senior qui facture, euh, qui crée, anime et déclare sa motivation sans attendre.</p>
+    <div class="ctas">
+      <a class="btn btn-p" href="https://estellelavenac.github.io/Estelle-Lavenac/book.html" target="_blank" rel="noopener">Voir mon book →</a>
+      <a class="btn btn-g" href="https://estellelavenac.github.io/Estelle-Lavenac/" target="_blank" rel="noopener">Mon CV en ligne</a>
+    </div>
+    <small>Gratuit, sans engagement, sans carte bancaire.</small>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="logo"><span class="grad-txt">abby</span><span class="x">×</span><span class="e">estelle</span></div>
+      <p>Estelle Lavenac, designer graphique senior : print, web, motion & vidéo. Une candidature qui aide Abby à se débarrasser de ses tâches créatives.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:estelle.lavenac@gmail.com">estelle.lavenac@gmail.com</a></li>
+        <li><a href="tel:0648374822">06 48 37 48 22</a></li>
+        <li>Pierrefeu-du-Var (83)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ressources</h4>
+      <ul>
+        <li><a href="https://estellelavenac.github.io/Estelle-Lavenac/book.html" target="_blank" rel="noopener">Mon book</a></li>
+        <li><a href="https://estellelavenac.github.io/Estelle-Lavenac/" target="_blank" rel="noopener">Mon CV en ligne</a></li>
+        <li><a href="https://estellelavenac.github.io/Estelle-Lavenac/CV-Estelle-Lavenac-2026.pdf" target="_blank" rel="noopener">CV PDF</a></li>
+      </ul>
+    </div>
+    <p class="copy">© 2026 Estelle Lavenac · Page de candidature non officielle, faite avec amour pour l'équipe Abby.</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/33648374822?text=Bonjour%20Estelle%2C%20je%20vous%20contacte%20depuis%20votre%20page%20pour%20Abby%20!" target="_blank" rel="noopener">👋 <span>On discute ?</span></a>
+
+<div class="live" id="live"><em id="liveIc">💸</em><div><span id="liveT"></span><small id="liveS"></small></div></div>
+
+<canvas id="confetti"></canvas>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // invoice lines
+  var lis = document.querySelectorAll('#lines li');
+  lis.forEach(function(li,i){ setTimeout(function(){ li.classList.add('on'); }, reduce?0:500 + i*380); });
+  setTimeout(function(){ document.getElementById('stamp').classList.add('on'); }, reduce?0:500 + lis.length*380 + 400);
+
+  // reveal
+  var els = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); },{threshold:.12});
+    els.forEach(function(el){ io.observe(el); });
+  } else els.forEach(function(el){ el.classList.add('in'); });
+
+  // counter
+  var c = document.getElementById('count'), done=false;
+  var cio = new IntersectionObserver(function(es){ if(es[0].isIntersecting && !done){ done=true; var n=0; var t=setInterval(function(){ n++; c.textContent=n; if(n>=9) clearInterval(t); }, reduce?0:110);} });
+  cio.observe(c);
+
+  // toggle
+  var sw = document.getElementById('sw'), pp=document.getElementById('proPrice'), ps=document.getElementById('proSub');
+  sw.addEventListener('click', function(){
+    sw.classList.toggle('off');
+    if(sw.classList.contains('off')){ pp.innerHTML='Sur devis'; ps.textContent='En freelance si vous préférez tester avant (mais le CDI, c\'est mieux 😉)'; }
+    else { pp.textContent='CDI'; ps.textContent='Full remote depuis le Var, ou hybride avec des passages à Nancy'; }
+  });
+
+  // live notifications
+  var notifs = [
+    ['💸','Nouveau paiement reçu','1 idée de génie · à l\'instant'],
+    ['📈','Motivation','+200 % ce mois-ci'],
+    ['🔔','Relance automatique','Estelle attend toujours votre appel'],
+    ['🎬','Export terminé','motion_abby_final_v3_VRAIFINAL.mp4'],
+    ['✅','Déclaration de motivation','transmise avec succès']
+  ];
+  var live=document.getElementById('live'), k=0;
+  function show(){
+    var n=notifs[k++%notifs.length];
+    document.getElementById('liveIc').textContent=n[0];
+    document.getElementById('liveT').textContent=n[1];
+    document.getElementById('liveS').textContent=n[2];
+    live.classList.add('on');
+    setTimeout(function(){ live.classList.remove('on'); }, 4200);
+  }
+  if(!reduce){ setTimeout(function(){ show(); setInterval(show, 11000); }, 4000); }
+
+  // date
+  var d=new Date(); document.getElementById('date').textContent='Le '+d.toLocaleDateString('fr-FR');
+
+  // signature pad
+  var cv=document.getElementById('canvas'), ctx=cv.getContext('2d'), drawing=false, dist=0, last=null, signedDone=false;
+  function size(){ var r=cv.getBoundingClientRect(), dpr=window.devicePixelRatio||1; cv.width=r.width*dpr; cv.height=r.height*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); ctx.lineWidth=3; ctx.lineCap='round'; ctx.lineJoin='round'; ctx.strokeStyle='#1262E5'; }
+  size(); window.addEventListener('resize', function(){ if(!signedDone) size(); });
+  function pos(e){ var r=cv.getBoundingClientRect(); return {x:e.clientX-r.left, y:e.clientY-r.top}; }
+  cv.addEventListener('pointerdown', function(e){ drawing=true; last=pos(e); cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener('pointermove', function(e){
+    if(!drawing) return; var p=pos(e);
+    ctx.beginPath(); ctx.moveTo(last.x,last.y); ctx.lineTo(p.x,p.y); ctx.stroke();
+    dist+=Math.hypot(p.x-last.x,p.y-last.y); last=p;
+  });
+  function end(){ if(!drawing) return; drawing=false; if(dist>260 && !signedDone){ signedDone=true; setTimeout(function(){ document.getElementById('signed').classList.add('on'); confetti(); }, 350); } }
+  cv.addEventListener('pointerup', end); cv.addEventListener('pointerleave', end); cv.addEventListener('pointercancel', end);
+  document.getElementById('clear').addEventListener('click', function(){ ctx.clearRect(0,0,cv.width,cv.height); dist=0; });
+
+  // confetti
+  var cc=document.getElementById('confetti'), cx=cc.getContext('2d');
+  function confetti(){
+    if(reduce) return;
+    cc.width=innerWidth; cc.height=innerHeight;
+    var cols=['#1EA2F0','#1262E5','#FFD23F','#16B364','#FF6FA8'], ps=[];
+    for(var i=0;i<160;i++) ps.push({x:innerWidth/2,y:innerHeight*0.55,vx:(Math.random()-.5)*16,vy:-Math.random()*16-6,s:Math.random()*8+4,c:cols[i%5],r:Math.random()*6,vr:(Math.random()-.5)*.3});
+    var f=0;
+    (function loop(){
+      cx.clearRect(0,0,cc.width,cc.height);
+      ps.forEach(function(p){ p.vy+=.45; p.x+=p.vx; p.y+=p.vy; p.r+=p.vr; cx.save(); cx.translate(p.x,p.y); cx.rotate(p.r); cx.fillStyle=p.c; cx.fillRect(-p.s/2,-p.s/4,p.s,p.s/2); cx.restore(); });
+      if(++f<160) requestAnimationFrame(loop); else cx.clearRect(0,0,cc.width,cc.height);
+    })();
+  }
+})();
+</script>
+<script>
+(function(){
+  var cv=document.getElementById('game'), ctx=cv.getContext('2d'), stage=document.getElementById('stage');
+  var W=0,H=0, dpr=1;
+  function size(){ var r=stage.getBoundingClientRect(); dpr=window.devicePixelRatio||1; W=r.width; H=r.height; cv.width=W*dpr; cv.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); if(player) player.y=H-player.h-14; }
+  var player=null, items=[], pops=[], score=0, time=30, running=false, last=0, spawnT=0, keys={}, targetX=null, raf=null;
+  var TYPES=[
+    {e:'💶',v:100,w:6,label:'+100 €',c:'#16B364'},
+    {e:'💡',v:300,w:1.6,label:'+300 €',c:'#1262E5'},
+    {e:'📄',v:-200,w:3.2,label:'−200 €',c:'#E5484D'}
+  ];
+  var fmt=function(n){ return n.toLocaleString('fr-FR')+' €'; };
+  var elScore=document.getElementById('gScore'), elTime=document.getElementById('gTime');
+
+  function pick(){ var t=0; TYPES.forEach(function(x){t+=x.w}); var r=Math.random()*t; for(var i=0;i<TYPES.length;i++){ r-=TYPES[i].w; if(r<=0) return TYPES[i]; } return TYPES[0]; }
+
+  function reset(){
+    size();
+    var pw=Math.max(92,Math.min(130,W*0.16));
+    player={w:pw,h:pw*0.62,x:W/2-pw/2,y:0}; player.y=H-player.h-14;
+    items=[]; pops=[]; score=0; time=30; spawnT=0; targetX=null;
+    elScore.textContent=fmt(0); elTime.textContent='30';
+  }
+
+  function roundRect(x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+
+  function drawPlayer(){
+    var p=player;
+    // ombre
+    ctx.fillStyle='rgba(14,26,61,.10)'; ctx.beginPath(); ctx.ellipse(p.x+p.w/2,p.y+p.h+6,p.w*.42,5,0,0,Math.PI*2); ctx.fill();
+    // fente
+    var g=ctx.createLinearGradient(p.x,p.y,p.x+p.w,p.y+p.h); g.addColorStop(0,'#1EA2F0'); g.addColorStop(.96,'#1262E5');
+    roundRect(p.x,p.y,p.w,p.h,p.h*.32); ctx.fillStyle=g; ctx.fill();
+    ctx.fillStyle='rgba(255,255,255,.35)'; roundRect(p.x+p.w*.3,p.y+6,p.w*.4,6,3); ctx.fill();
+    ctx.fillStyle='#fff'; ctx.font='800 '+Math.round(p.h*.36)+'px "Plus Jakarta Sans",sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText('abby',p.x+p.w/2,p.y+p.h*.58);
+  }
+
+  function spawn(){
+    var t=pick(), s=Math.max(30,Math.min(42,W*0.055));
+    items.push({t:t,x:s/2+Math.random()*(W-s),y:-s,s:s,vy:(H*0.32+Math.random()*H*0.22)*(1+(30-time)/40),rot:(Math.random()-.5)*.6,vr:(Math.random()-.5)*2});
+  }
+
+  function step(ts){
+    var dt=Math.min(.05,(ts-last)/1000||0); last=ts;
+    if(running){
+      time-=dt; if(time<=0){ time=0; end(); }
+      elTime.textContent=Math.ceil(time);
+      // mouvement
+      var sp=W*1.1;
+      if(keys.ArrowLeft) player.x-=sp*dt;
+      if(keys.ArrowRight) player.x+=sp*dt;
+      if(targetX!==null) player.x+= (targetX-player.w/2-player.x)*Math.min(1,dt*14);
+      player.x=Math.max(4,Math.min(W-player.w-4,player.x));
+      // spawn
+      spawnT-=dt; if(spawnT<=0){ spawn(); spawnT=Math.max(.28,.62-(30-time)*.011)*(0.7+Math.random()*.6); }
+      // items
+      for(var i=items.length-1;i>=0;i--){
+        var it=items[i]; it.y+=it.vy*dt; it.rot+=it.vr*dt;
+        var hit=it.y+it.s*.4>player.y && it.y-it.s*.4<player.y+player.h*.6 && it.x>player.x-4 && it.x<player.x+player.w+4;
+        if(hit){ score+=it.t.v; pops.push({x:it.x,y:player.y-8,txt:it.t.label,c:it.t.c,a:1}); items.splice(i,1); elScore.textContent=fmt(score); continue; }
+        if(it.y>H+it.s) items.splice(i,1);
+      }
+    }
+    for(var j=pops.length-1;j>=0;j--){ pops[j].y-=40*dt; pops[j].a-=dt*1.4; if(pops[j].a<=0) pops.splice(j,1); }
+    draw();
+    raf=requestAnimationFrame(step);
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    // petits nuages décoratifs
+    ctx.fillStyle='rgba(30,162,240,.07)';
+    for(var k=0;k<5;k++){ ctx.beginPath(); ctx.arc((k*0.23+0.08)*W,(k%2?0.18:0.32)*H,26+k*6,0,Math.PI*2); ctx.fill(); }
+    items.forEach(function(it){
+      ctx.save(); ctx.fillStyle='#0E1A3D'; ctx.translate(it.x,it.y); ctx.rotate(it.rot);
+      ctx.font=it.s+'px "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillText(it.t.e,0,0); ctx.restore();
+    });
+    if(player) drawPlayer();
+    pops.forEach(function(p){ ctx.globalAlpha=Math.max(0,p.a); ctx.fillStyle=p.c; ctx.font='800 18px "Plus Jakarta Sans",sans-serif'; ctx.textAlign='center'; ctx.fillText(p.txt,p.x,p.y); ctx.globalAlpha=1; });
+  }
+
+  function start(){
+    reset();
+    document.getElementById('gStart').classList.add('hide');
+    document.getElementById('gEnd').classList.add('hide');
+    running=true; last=performance.now();
+  }
+
+  function end(){
+    running=false; items=[];
+    var rank, title;
+    if(score<0){ title='Aïe, la paperasse a gagné 😅'; rank='Besoin d\'un logiciel de facturation'; }
+    else if(score<1500){ title='Pas mal du tout !'; rank='Micro-entrepreneuse en rodage'; }
+    else if(score<3500){ title='Belle compta ! 📈'; rank='Freelance au top de sa trésorerie'; }
+    else { title='Seuil de TVA dépassé ! 🎉'; rank='Légende de l\'encaissement'; }
+    var best=0; try{ best=+localStorage.getItem('abby-estelle-best')||0; if(score>best){ best=score; localStorage.setItem('abby-estelle-best',score); } }catch(e){ best=Math.max(best,score); }
+    document.getElementById('gTitle').textContent=title;
+    document.getElementById('gFinal').textContent=fmt(score);
+    document.getElementById('gRank').textContent=rank;
+    document.getElementById('gBest').textContent='Meilleur score : '+fmt(best)+' · Estelle, elle, vous rapporte bien plus que ça 😉';
+    document.getElementById('gEnd').classList.remove('hide');
+  }
+
+  // contrôles
+  function setTarget(e){ var r=cv.getBoundingClientRect(); targetX=e.clientX-r.left; }
+  cv.addEventListener('pointermove',function(e){ if(running) setTarget(e); });
+  cv.addEventListener('pointerdown',function(e){ if(running){ setTarget(e); cv.setPointerCapture(e.pointerId); } });
+  window.addEventListener('keydown',function(e){
+    if(!running) return;
+    if(e.key==='ArrowLeft'||e.key==='ArrowRight'){ keys[e.key]=true; targetX=null; e.preventDefault(); }
+  });
+  window.addEventListener('keyup',function(e){ keys[e.key]=false; });
+  window.addEventListener('resize',function(){ if(!running){ reset(); } else size(); });
+  document.getElementById('gPlay').addEventListener('click',start);
+  document.getElementById('gAgain').addEventListener('click',start);
+
+  reset(); raf=requestAnimationFrame(function(t){ last=t; step(t); });
+})();
+</script>
+</body>
+</html>
